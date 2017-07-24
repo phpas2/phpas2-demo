@@ -36,7 +36,7 @@ file_put_contents($tmpFile, 'Test Message from ' . Adapter::getServerSignature()
 
 $message->setReceivingPartner($receivingPartner)
     ->setSendingPartner($sendingPartner)
-    ->addFile($tmpFile)
+    ->addFile($tmpFile, 'text/plain', 'test-as2-file.txt')
     ->encode();
 
 $client = new Client();

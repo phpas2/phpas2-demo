@@ -1,3 +1,7 @@
 vendor/*
+_logs/*
+_messages/*
+_private/*
 .idea
 .DS_Store
+!.gitkeep
