@@ -10,12 +10,10 @@ namespace PHPAS2Demo;
 require_once('vendor/autoload.php');
 
 use PHPAS2\Client;
+use PHPAS2\Exception\MDNFailure;
 use PHPAS2\Message;
 use PHPAS2\Message\Adapter;
 use PHPAS2\Partner;
-
-\ladybug_set_format('html');
-\ladybug_set_theme('Modern');
 
 $message = new Message();
 
@@ -39,8 +37,12 @@ $message->setReceivingPartner($receivingPartner)
     ->addFile($tmpFile, 'text/plain', 'test-as2-file.txt')
     ->encode();
 
-$client = new Client();
-$client->sendRequest($message);
+try {
+    $client = new Client();
+    $client->sendRequest($message);
 
-echo 'Message sent!';
-ld($client->getResponse());
+    echo 'Message sent and received successfully.';
+}
+catch (MDNFailure $e) {
+    echo 'Message failed to be sent: "' . $e->getMessage() . '"';
+}
