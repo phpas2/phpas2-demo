@@ -26,7 +26,7 @@
             $dirList = scandir($partnersDir);
             $partners = [];
             foreach ($dirList as $dir) {
-                if ($dir == '.' || $dir == '..') {
+                if ($dir == '.' || $dir == '..' || $dir == '.DS_Store') {
                     continue;
                 }
 
@@ -56,7 +56,7 @@
                 $dirList = scandir($partnersDir);
                 $partners = [];
                 foreach ($dirList as $dir) {
-                    if ($dir == '.' || $dir == '..') {
+                    if ($dir == '.' || $dir == '..' || $dir == '.DS_Store') {
                         continue;
                     }
 
