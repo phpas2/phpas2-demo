@@ -34,7 +34,7 @@ if (
     <body>
         <h2><?php Adapter::getSoftwareName(); ?></h2>
         <p>You have performed an HTTP GET request.  To submit an AS2 message you must send a POST request.</p>
-        <p>Copyright &copy; 2017 - <a href="https://bap14.github.io/as2secure/">bap14\as2secure</a></p>
+        <p>Copyright &copy; 2017 - <a href="https://phpas2.github.io/">phpas2\phpas2</a></p>
     </body>
     </html>
     <?php
