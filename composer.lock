@@ -7,6 +7,100 @@
     "content-hash": "70c35e9a655f7218528724edb868b0f0",
     "packages": [
         {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "pear-pear.horde.org/Horde_Compress",
+            "version": "2.1.6",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.horde.org/get/Horde_Compress-2.1.6.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "pear-pear.horde.org/horde_exception": "<3.0.0.0",
+                "pear-pear.horde.org/horde_mime": "<3.0.0.0",
+                "pear-pear.horde.org/horde_translation": "<3.0.0.0",
+                "pear-pear.horde.org/horde_util": "<3.0.0.0",
+                "php": "<8.0.0.0"
+            },
+            "replace": {
+                "pear-horde/horde_compress": "== 2.1.6.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "LGPL-2.1"
+            ],
+            "description": "An API for various compression techniques."
+        },
+        {
+            "name": "pear-pear.horde.org/Horde_Compress_Fast",
+            "version": "1.1.1",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.horde.org/get/Horde_Compress_Fast-1.1.1.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "pear-pear.horde.org/horde_exception": "<3.0.0.0",
+                "php": "<8.0.0.0"
+            },
+            "replace": {
+                "pear-horde/horde_compress_fast": "== 1.1.1.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "LGPL-2.1"
+            ],
+            "description": "Provides compression suitable for packing strings on-the-fly in PHP code (as opposed to more resource-intensive compression algorithms such as DEFLATE)."
+        },
+        {
             "name": "pear-pear.horde.org/Horde_Exception",
             "version": "2.0.8",
             "dist": {
@@ -38,10 +132,10 @@
         },
         {
             "name": "pear-pear.horde.org/Horde_Idna",
-            "version": "1.0.4",
+            "version": "1.1.1",
             "dist": {
                 "type": "file",
-                "url": "https://pear.horde.org/get/Horde_Idna-1.0.4.tgz",
+                "url": "https://pear.horde.org/get/Horde_Idna-1.1.1.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -51,7 +145,7 @@
                 "php": "<8.0.0.0"
             },
             "replace": {
-                "pear-horde/horde_idna": "== 1.0.4.0"
+                "pear-horde/horde_idna": "== 1.1.1.0"
             },
             "type": "pear-library",
             "autoload": {
@@ -69,10 +163,10 @@
         },
         {
             "name": "pear-pear.horde.org/Horde_ListHeaders",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "dist": {
                 "type": "file",
-                "url": "https://pear.horde.org/get/Horde_ListHeaders-1.2.4.tgz",
+                "url": "https://pear.horde.org/get/Horde_ListHeaders-1.2.5.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -83,7 +177,7 @@
                 "php": "<8.0.0.0"
             },
             "replace": {
-                "pear-horde/horde_listheaders": "== 1.2.4.0"
+                "pear-horde/horde_listheaders": "== 1.2.5.0"
             },
             "type": "pear-library",
             "autoload": {
@@ -101,10 +195,10 @@
         },
         {
             "name": "pear-pear.horde.org/Horde_Mail",
-            "version": "2.6.3",
+            "version": "2.6.4",
             "dist": {
                 "type": "file",
-                "url": "https://pear.horde.org/get/Horde_Mail-2.6.3.tgz",
+                "url": "https://pear.horde.org/get/Horde_Mail-2.6.4.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -118,7 +212,7 @@
                 "php": "<8.0.0.0"
             },
             "replace": {
-                "pear-horde/horde_mail": "== 2.6.3.0"
+                "pear-horde/horde_mail": "== 2.6.4.0"
             },
             "type": "pear-library",
             "autoload": {
@@ -136,10 +230,10 @@
         },
         {
             "name": "pear-pear.horde.org/Horde_Mime",
-            "version": "2.10.2",
+            "version": "2.10.3",
             "dist": {
                 "type": "file",
-                "url": "https://pear.horde.org/get/Horde_Mime-2.10.2.tgz",
+                "url": "https://pear.horde.org/get/Horde_Mime-2.10.3.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -156,7 +250,7 @@
                 "php": "<8.0.0.0"
             },
             "replace": {
-                "pear-horde/horde_mime": "== 2.10.2.0"
+                "pear-horde/horde_mime": "== 2.10.3.0"
             },
             "type": "pear-library",
             "autoload": {
@@ -262,10 +356,10 @@
         },
         {
             "name": "pear-pear.horde.org/Horde_Support",
-            "version": "2.1.5",
+            "version": "2.2.0",
             "dist": {
                 "type": "file",
-                "url": "https://pear.horde.org/get/Horde_Support-2.1.5.tgz",
+                "url": "https://pear.horde.org/get/Horde_Support-2.2.0.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -276,7 +370,7 @@
                 "php": "<8.0.0.0"
             },
             "replace": {
-                "pear-horde/horde_support": "== 2.1.5.0"
+                "pear-horde/horde_support": "== 2.2.0.0"
             },
             "type": "pear-library",
             "autoload": {
@@ -324,10 +418,10 @@
         },
         {
             "name": "pear-pear.horde.org/Horde_Translation",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "dist": {
                 "type": "file",
-                "url": "https://pear.horde.org/get/Horde_Translation-2.2.1.tgz",
+                "url": "https://pear.horde.org/get/Horde_Translation-2.2.2.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -335,7 +429,7 @@
                 "php": "<8.0.0.0"
             },
             "replace": {
-                "pear-horde/horde_translation": "== 2.2.1.0"
+                "pear-horde/horde_translation": "== 2.2.2.0"
             },
             "type": "pear-library",
             "autoload": {
@@ -446,13 +540,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpas2/phpas2.git",
-                "reference": "b3eb3768cf1485675c0b91b65130c6a61a078c9f"
+                "reference": "051f912ba0c2a320320c7dc17082d6d44b03a736"
             },
             "require": {
+                "pear-pear.horde.org/horde_compress": "~2.1.5",
+                "pear-pear.horde.org/horde_compress_fast": "~1.1.1",
                 "pear-pear.horde.org/horde_mime": "~2.10.2",
                 "pear-pear.horde.org/horde_util": "~2.5.8",
                 "pear-pear.php.net/mail_mimedecode": "~1.5.6",
-                "php": "~5.6.0|~7.0.17"
+                "php": "~5.6.0|~7.0.17",
+                "phpseclib/phpseclib": "~2.0.6",
+                "zendframework/zend-mail": "^2.8",
+                "zendframework/zend-mime": "^2.6"
             },
             "bin": [
                 "bin/AS2Secure.jar"
@@ -473,10 +572,100 @@
                 "as2securecode",
                 "phpas2"
             ],
-            "time": "2017-07-18 15:26:16"
-        }
-    ],
-    "packages-dev": [
+            "time": "2017-10-11 18:06:36"
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "6d51f2bf850c06fa0457bbaa223f6b58a7f00e20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/6d51f2bf850c06fa0457bbaa223f6b58a7f00e20",
+                "reference": "6d51f2bf850c06fa0457bbaa223f6b58a7f00e20",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "~4.0",
+                "sami/sami": "~2.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "suggest": {
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "phpseclib/bootstrap.php"
+                ],
+                "psr-4": {
+                    "phpseclib\\": "phpseclib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "time": "2017-10-05 10:39:00"
+        },
         {
             "name": "psr/container",
             "version": "dev-master",
@@ -524,8 +713,281 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-06-28T15:35:32+00:00"
+            "time": "2017-06-28 15:35:32"
         },
+        {
+            "name": "zendframework/zend-loader",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-loader.git",
+                "reference": "dcacfc3bd1cb0721409d62dc309f5d29eb1f4631"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-loader/zipball/dcacfc3bd1cb0721409d62dc309f5d29eb1f4631",
+                "reference": "dcacfc3bd1cb0721409d62dc309f5d29eb1f4631",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5 || ^7.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Loader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-loader",
+            "keywords": [
+                "loader",
+                "zf2"
+            ],
+            "time": "2016-05-05 14:59:09"
+        },
+        {
+            "name": "zendframework/zend-mail",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-mail.git",
+                "reference": "912a4ad8c2b81066470c656dded786a182592f02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-mail/zipball/912a4ad8c2b81066470c656dded786a182592f02",
+                "reference": "912a4ad8c2b81066470c656dded786a182592f02",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": "^7.0 || ^5.6",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-mime": "^2.5",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0",
+                "zendframework/zend-validator": "^2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-config": "^2.6",
+                "zendframework/zend-crypt": "^2.6",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
+            },
+            "suggest": {
+                "ext-intl": "Handle IDN in AddressList hostnames",
+                "zendframework/zend-crypt": "Crammd5 support in SMTP Auth",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3 when using SMTP to deliver messages"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev",
+                    "dev-develop": "2.9-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Mail",
+                    "config-provider": "Zend\\Mail\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Mail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides generalized functionality to compose and send both text and MIME-compliant multipart e-mail messages",
+            "homepage": "https://github.com/zendframework/zend-mail",
+            "keywords": [
+                "mail",
+                "zf2"
+            ],
+            "time": "2017-06-08 20:05:27"
+        },
+        {
+            "name": "zendframework/zend-mime",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-mime.git",
+                "reference": "243772f30e3f18827fd446d7e5ad68268f741683"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-mime/zipball/243772f30e3f18827fd446d7e5ad68268f741683",
+                "reference": "243772f30e3f18827fd446d7e5ad68268f741683",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.7 || ^5.7",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-mail": "^2.6"
+            },
+            "suggest": {
+                "zendframework/zend-mail": "Zend\\Mail component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev",
+                    "dev-develop": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Mime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-mime",
+            "keywords": [
+                "mime",
+                "zf2"
+            ],
+            "time": "2017-01-16 16:45:00"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stdlib.git",
+                "reference": "16818ed8ee2a92a503c43883dcb6263fe6283ee8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/16818ed8ee2a92a503c43883dcb6263fe6283ee8",
+                "reference": "16818ed8ee2a92a503c43883dcb6263fe6283ee8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "^2.6.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2016-09-13 14:40:02"
+        },
+        {
+            "name": "zendframework/zend-validator",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-validator.git",
+                "reference": "0fb1d0ef94b23f985222eceb1631e5414b554699"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/0fb1d0ef94b23f985222eceb1631e5414b554699",
+                "reference": "0fb1d0ef94b23f985222eceb1631e5414b554699",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7.6 || ^3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+                "zendframework/zend-cache": "^2.6.1",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-config": "^2.6",
+                "zendframework/zend-db": "^2.7",
+                "zendframework/zend-filter": "^2.6",
+                "zendframework/zend-http": "^2.5.4",
+                "zendframework/zend-i18n": "^2.6",
+                "zendframework/zend-math": "^2.6",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
+                "zendframework/zend-session": "^2.8",
+                "zendframework/zend-uri": "^2.5"
+            },
+            "suggest": {
+                "zendframework/zend-db": "Zend\\Db component, required by the (No)RecordExists validator",
+                "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
+                "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages",
+                "zendframework/zend-i18n-resources": "Translations of validator messages",
+                "zendframework/zend-math": "Zend\\Math component, required by the Csrf validator",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
+                "zendframework/zend-session": "Zend\\Session component, ^2.8; required by the Csrf validator",
+                "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.10-dev",
+                    "dev-develop": "2.11-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Validator",
+                    "config-provider": "Zend\\Validator\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a set of commonly needed validators",
+            "homepage": "https://github.com/zendframework/zend-validator",
+            "keywords": [
+                "validator",
+                "zf2"
+            ],
+            "time": "2017-08-22 14:20:08"
+        }
+    ],
+    "packages-dev": [
         {
             "name": "psr/log",
             "version": "dev-master",
@@ -571,7 +1033,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "ptachoire/cssembed",
@@ -819,16 +1281,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "a34381a455c296a5a2cd97317933aa70c1336e5e"
+                "reference": "cafadff3df9c9750997eb45f1a1597487d5228ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/a34381a455c296a5a2cd97317933aa70c1336e5e",
-                "reference": "a34381a455c296a5a2cd97317933aa70c1336e5e",
+                "url": "https://api.github.com/repos/symfony/config/zipball/cafadff3df9c9750997eb45f1a1597487d5228ef",
+                "reference": "cafadff3df9c9750997eb45f1a1597487d5228ef",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/filesystem": "~2.8|~3.0|~4.0"
             },
             "conflict": {
@@ -873,7 +1335,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-24T09:47:31+00:00"
+            "time": "2017-10-10T10:38:39+00:00"
         },
         {
             "name": "symfony/console",
@@ -881,36 +1343,35 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "4820f8e1b3c03aab46a655518d078a7ffc8df4ef"
+                "reference": "2ea46ac0f2e5557108e3d40490703aad4e140ecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/4820f8e1b3c03aab46a655518d078a7ffc8df4ef",
-                "reference": "4820f8e1b3c03aab46a655518d078a7ffc8df4ef",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2ea46ac0f2e5557108e3d40490703aad4e140ecb",
+                "reference": "2ea46ac0f2e5557108e3d40490703aad4e140ecb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/debug": "~2.8|~3.0|~4.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3",
+                "symfony/dependency-injection": "<3.4",
                 "symfony/process": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.3|~4.0",
-                "symfony/dependency-injection": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
-                "symfony/filesystem": "~2.8|~3.0|~4.0",
-                "symfony/http-kernel": "~2.8|~3.0|~4.0",
+                "symfony/lock": "~3.4|~4.0",
                 "symfony/process": "~3.3|~4.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
+                "symfony/lock": "",
                 "symfony/process": ""
             },
             "type": "library",
@@ -943,7 +1404,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-17T12:21:21+00:00"
+            "time": "2017-10-10T17:53:03+00:00"
         },
         {
             "name": "symfony/debug",
@@ -951,16 +1412,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "296d63b9b2fbe8da9308713295543c08e93cc9cf"
+                "reference": "147025beafa520d0e0fee9dbd073636ef819f675"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/296d63b9b2fbe8da9308713295543c08e93cc9cf",
-                "reference": "296d63b9b2fbe8da9308713295543c08e93cc9cf",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/147025beafa520d0e0fee9dbd073636ef819f675",
+                "reference": "147025beafa520d0e0fee9dbd073636ef819f675",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "psr/log": "~1.0"
             },
             "conflict": {
@@ -999,7 +1460,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-06T13:36:30+00:00"
+            "time": "2017-10-10T10:38:39+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -1007,22 +1468,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "4e5b4212edfefe74c14f6153cc44e8ce324155c1"
+                "reference": "073fcfae3d97f85b235b1d89cc0286cc7ab74c3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/4e5b4212edfefe74c14f6153cc44e8ce324155c1",
-                "reference": "4e5b4212edfefe74c14f6153cc44e8ce324155c1",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/073fcfae3d97f85b235b1d89cc0286cc7ab74c3d",
+                "reference": "073fcfae3d97f85b235b1d89cc0286cc7ab74c3d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "psr/container": "^1.0"
             },
             "conflict": {
                 "symfony/config": "<3.3.1",
                 "symfony/finder": "<3.3",
-                "symfony/yaml": "<3.3"
+                "symfony/proxy-manager-bridge": "<3.4",
+                "symfony/yaml": "<3.4"
             },
             "provide": {
                 "psr/container-implementation": "1.0"
@@ -1030,7 +1492,7 @@
             "require-dev": {
                 "symfony/config": "~3.3|~4.0",
                 "symfony/expression-language": "~2.8|~3.0|~4.0",
-                "symfony/yaml": "~3.3|~4.0"
+                "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/config": "",
@@ -1069,7 +1531,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-18T11:59:19+00:00"
+            "time": "2017-10-10T10:38:39+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -1077,16 +1539,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "353cb00e1fb1342b6e30a6c84e4b301568e58b9f"
+                "reference": "113da0323f3409ebf8ddf394e9596ffeaf2723dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/353cb00e1fb1342b6e30a6c84e4b301568e58b9f",
-                "reference": "353cb00e1fb1342b6e30a6c84e4b301568e58b9f",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/113da0323f3409ebf8ddf394e9596ffeaf2723dc",
+                "reference": "113da0323f3409ebf8ddf394e9596ffeaf2723dc",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
@@ -1118,7 +1580,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-11T07:19:17+00:00"
+            "time": "2017-10-03T13:54:22+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1126,16 +1588,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "295fa37f13dbc4bba200680d2f4ae2c4a1f77709"
+                "reference": "6db4a8ddcd86146761130989eb348451de03de74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/295fa37f13dbc4bba200680d2f4ae2c4a1f77709",
-                "reference": "295fa37f13dbc4bba200680d2f4ae2c4a1f77709",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/6db4a8ddcd86146761130989eb348451de03de74",
+                "reference": "6db4a8ddcd86146761130989eb348451de03de74",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
@@ -1167,7 +1629,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01T21:02:15+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1175,12 +1637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
                 "shasum": ""
             },
             "require": {
@@ -1192,7 +1654,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -1226,7 +1688,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "twig/twig",
@@ -1234,12 +1696,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "f1703ea411d642f5b26c81553063a3154325ed80"
+                "reference": "e7944a1f67499a230463f463d7cecc3336b87ea1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f1703ea411d642f5b26c81553063a3154325ed80",
-                "reference": "f1703ea411d642f5b26c81553063a3154325ed80",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e7944a1f67499a230463f463d7cecc3336b87ea1",
+                "reference": "e7944a1f67499a230463f463d7cecc3336b87ea1",
                 "shasum": ""
             },
             "require": {
@@ -1253,7 +1715,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.34-dev"
+                    "dev-master": "1.35-dev"
                 }
             },
             "autoload": {
@@ -1291,7 +1753,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-07-04T13:20:04+00:00"
+            "time": "2017-09-27T18:07:18+00:00"
         }
     ],
     "aliases": [],
