@@ -15,6 +15,14 @@ use PHPAS2\Message;
 use PHPAS2\Message\Adapter;
 use PHPAS2\Partner;
 
+if (
+    !array_key_exists('as2to', $_REQUEST) || !$_REQUEST['as2to'] ||
+    !array_key_exists('as2from', $_REQUEST) || !$_REQUEST['as2from']
+) {
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . '/');
+    exit;
+}
+
 $message = new Message();
 
 // Remote
@@ -46,3 +54,6 @@ try {
 catch (MDNFailure $e) {
     echo 'Message failed to be sent: "' . $e->getMessage() . '"';
 }
+
+echo '<pre>' . implode(PHP_EOL, $client->getResponse()->getHeaders()) . '</pre>';
+echo '<pre>' . $client->getResponse()->getContent() . '</pre>';

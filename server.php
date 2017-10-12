@@ -15,7 +15,12 @@ if (
     in_array($_SERVER['REQUEST_METHOD'], ['PUT', 'PUSH', 'POST'])
 ) {
     try {
-        $server = new Server();
+        $server = new Server('phpas2test');
+        // TODO: Expand this to multiple methods
+        #$mdn = $server->processRequest();
+        #if ($mdn instanceof \PHPAS2\Message\MessageDispositionNotification) {
+        #    $server->sendMDN($mdn);
+        #}
     }
     catch (\Exception $e) {
         echo 'An error has occurred: ' . $e->getMessage();
@@ -26,15 +31,15 @@ if (
     <!DOCTYPE html>
     <html>
     <head>
-        <title><?php Adapter::getSoftwareName(); ?></title>
+        <title><?php echo Adapter::getSoftwareName(); ?></title>
         <meta name="description" content="<?php Adapter::getSoftwareName(); ?>" />
         <meta name="copyright" content="<?php Adapter::getSoftwareName(); ?>" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
     <body>
-        <h2><?php Adapter::getSoftwareName(); ?></h2>
+        <h2><?php echo Adapter::getSoftwareName(); ?> - Local</h2>
         <p>You have performed an HTTP GET request.  To submit an AS2 message you must send a POST request.</p>
-        <p>Copyright &copy; 2017 - <a href="https://phpas2.github.io/">phpas2\phpas2</a></p>
+        <p>Copyright &copy; 2017 - <a href="https://www.phpas2.com/">phpas2\phpas2</a></p>
     </body>
     </html>
     <?php
