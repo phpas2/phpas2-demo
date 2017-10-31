@@ -15,15 +15,12 @@ if (
     in_array($_SERVER['REQUEST_METHOD'], ['PUT', 'PUSH', 'POST'])
 ) {
     try {
-        // $request = new \PHPAS2\Request(file_get_contents('php://input'), $HeaderCollection::parseHttpRequest());
-
         $server = new Server('phpas2test');
         $server->processRequest();
         $server->sendResponse();
     }
     catch (\Exception $e) {
         echo 'An error has occurred: ' . $e->getMessage();
-        //throw $e;
     }
 } else {
     ?>
