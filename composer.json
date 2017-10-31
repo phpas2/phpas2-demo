@@ -8,14 +8,6 @@
         {
             "type": "git",
             "url": "https://github.com/phpas2/phpas2.git"
-        },
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        },
-        {
-            "type": "pear",
-            "url": "https://pear.php.net"
         }
     ],
     "require": {
